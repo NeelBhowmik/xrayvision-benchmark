@@ -78,10 +78,10 @@
 ## GDXray
 
 
-## deei6
+<!-- ## deei6
 
 
-## dbf6 
+## dbf6  -->
 
 
 # :frog: Reference
@@ -93,3 +93,9 @@ If you use this repo and like it, use this to cite it:
       year={2023},
       url={https://github.com/NeelBhowmik/xvision-benchmark}
     }
+```
+# :rocket: Contribute
+
+Welcome to our lively repository - and you're invited to join the party! Feel free to contribute! If you spot a missing paper - create an issue or drop us an email at neelanjan.bhowmik@durham.ac.uk. 
+
+Together, we'll make this repo the coolest gathering spot for all things knowledge! 🚀📚
