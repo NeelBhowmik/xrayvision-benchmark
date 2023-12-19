@@ -78,6 +78,18 @@
 
 ## HiXray
 
+| Model      | mAP   | Laptop | MobilePhone | Cosmetic | PortableCharger2 | Water | PortableCharger1 | Tablet | NonmetallicLighter |
+|------------|-------|--------|-------------|----------|------------------|-------|------------------|--------|--------------------|
+| CR-CNN     |  
+| FSAF       | 
+| DDETR      | 
+| FRCNNw/ST  | 
+| YOLOX      | 
+| CenterNet  | 
+| FCOS       | 0.817 | 0.981   | 0.970      | 0.614    | 0.932            | 0.911 | 0.943            | 0.956  | 0.225              |      
+| TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301              |
+| FreeAnchor | 0.839 | 0.985   | 0.972      | 0.659    | 0.937            | 0.919 | 0.949            | 0.964  | 0.328              |
+
 
 ## CLCXray
 
