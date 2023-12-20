@@ -80,7 +80,7 @@
 
 | Model      | mAP   | Laptop | MobilePhone | Cosmetic | PortableCharger2 | Water | PortableCharger1 | Tablet | NonmetallicLighter |
 |------------|-------|--------|-------------|----------|------------------|-------|------------------|--------|--------------------|
-| CR-CNN     |  
+| CR-CNN     | 0.831 | 0.982  | 0.969       | 0.630    | 0.930            | 0.917 | 0.943            | 0.956  | 0.320              | 
 | FSAF       | 
 | DDETR      | 
 | FRCNNw/ST  | 
