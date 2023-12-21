@@ -93,6 +93,20 @@
 
 ## CLCXray
 
+| Model      | mAP   | blade |scissors | knife | dagger | SwissArmyKnife | PlasticBottle | Cans | VacuumCup | GlassBottle | CartonDrinks |Tin    | SprayCans |
+|------------|-------|-------|---------|-------|--------|----------------|---------------|------|-----------|-------------|--------------|-------|-----------|
+| CR-CNN     | 0.721 |  0.752| 0.804   | 1.000 | 0.891  | 0.881          | 0.812         | 0.449| 0.927     | 0.209       | 0.823        | 0.725 | 0.383     | 
+| FSAF       | 
+| DDETR      | 
+| FRCNNw/ST  | 
+| YOLOX      | 
+| CenterNet  | 
+| FCOS       | 
+| TOOD       | 
+| FreeAnchor | 
+
+
+
 
 ## PIXray
 
