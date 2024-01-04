@@ -1,8 +1,8 @@
 # XVision Benchmark: Benchmarking of X-ray security imaging datasets
 
-<!-- <p align="center">
+<p align="center">
   <img src="images/xray-history.png" />
-</p> -->
+</p>
 
 *[List of datasets and papers (not exhaustive)]*
 
