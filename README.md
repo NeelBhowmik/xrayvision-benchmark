@@ -8,7 +8,7 @@
 
 XVision benchmack aims to provide a collection of detection performance applied on X-ray security screening public datasets using state-of-the-art deep learning based object detection algorithms. XVision benchmack is constantly updated with the latest object detection algorithms - check in regularly for updates! 
 
-*<small>[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]</small>*
+<small>*[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]*</small>
 
 <!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
