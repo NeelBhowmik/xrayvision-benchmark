@@ -1,34 +1,64 @@
 # XVision Benchmark: Benchmarking of X-ray security imaging datasets
 
-<p align="center">
+<!-- <p align="center">
   <img src="images/xray-history.png" />
-</p>
+</p> -->
 
-*[List of datasets and papers (not exhaustive)]*
+<!-- *[List of datasets and papers (not exhaustive)]* -->
+
+XVision benchmack aims to provide a collection of detection performance applied on X-ray security screening public datasets using state-of-the-art deep learning based object detection algorithms. XVision benchmack is constantly updated with the latest object detection algorithms - check in regularly for updates! 
+
+*[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]*
+
+<!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
+
+## Index
+- [Dataset](#dataset)
+- [Object Detection Model](#object-detection-model)
+- [Experimental Protocol](#experimental-protocol)
+- [OPIXray](#opixray)
+- [SIXray10](#sixray10)
+- [PIDray](#pidray)
+- [HiXray](#hixray)
+- [CLCXray](#clcxray)
+- [Reference](#reference)
 
 ## Dataset
 
 |Name       | Type | Year | Class |Prohibited - Negative| Annotations| Views|Open Source | 
 |-----------|------|------|-------------|-------------|------|-----|------|
-|FSOD       |2D    | 2022 |20            |12,333 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
-|EDS       |2D    | 2022 |10            |14,219 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
-|Xray-PI       |2D    | 2022 |12            |2,409 - 0 | bbox, mask|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/LPAIS/Xray-PI)  |
-|PIXray       |2D    | 2022 |12            |5,046 - 0 | bbox, mask|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/Mbwslib/DDoAS)  |
-|CLCXray       |2D    | 2022 |12            |9,565 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
-|HiXray       |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
-|deei6       |2D    | 2021 |6            |7,022 - 0 | bbox, mask|2     |<span style="color:red;">✕</span> [[Link]](https://breckon.org/toby/publications/papers/bhowmik21energy.pdf)  |
-|PIDray    |2D    | 2021 |12           |47,677 - 0  | bbox, mask |1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
-|AB       |2D    | 2021 |--            |417 - 6,608 | -- |2     |<span style="color:red;">✕</span> [[Link]](https://ieeexplore.ieee.org/document/9534034)  |
-|dbf4       |2D    | 2020 |4            |10,112 - 0 | bbox, mask |4     |<span style="color:red;">✕</span> [[Link]](https://breckon.org/toby/publications/papers/isaac20multiview.pdf)  |
-|OPIXray    |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
-|SIXray     |2D    | 2019 |6            |8,929 - 1,050,0302 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray)           |
-|COMPASS-XP     |2D    | 2019 |366            |1928 - 0 | -- |1 |<span style="color:green;">✓</span> [[Link]](https://zenodo.org/record/2654887#.YUtGVHVKikA)           |
-|dbf6       |2D    | 2018 |6            |11,627 - 0 | bbox, mask |4    |<span style="color:red;">✕</span> [[Link]](https://breckon.org/toby/publications/papers/akcay18architectures.pdf)  |
-|GDXray       |2D    | 2015 |5            |19,407 - 0 | bbox |1     |<span style="color:green;">✓</span> [[Link]](https://domingomery.ing.puc.cl/material/gdxray/)  |
-|Dur_3D       |3D    | 2020 |5            |774 - 0 | bbox | --   |<span style="color:red;">✕</span> [[Link]](https://arxiv.org/abs/2008.01218)  |
-|Flitton_3D       |3D    | 2015 |2        |810 - 2149 | bbox | --   |<span style="color:red;">✕</span> [[Link]](https://breckon.org/toby/publications/papers/flitton15codebooks.pdf)  |
+|OPIXray [[paper]](https://arxiv.org/abs/2004.08656)   |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
+|SIXray  [[paper]](https://arxiv.org/abs/1901.00303)   |2D    | 2019 |6            |8,929 - 1,050,0302 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray) |
+|PIDray [[paper]](https://arxiv.org/abs/2211.10763)   |2D    | 2022 |12           |47,677 - 0  | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
+|HiXray  [[paper]](https://arxiv.org/abs/2108.09917)     |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
+|CLCXray   [[paper]](https://ieeexplore.ieee.org/document/9722843)    |2D    | 2022 |12            |9,565 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
+<!-- |PIXray       |2D    | 2022 |12            |5,046 - 0 | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/Mbwslib/DDoAS)  | -->
 
----
+[<sup>[top]</sup>](#index)
+
+## Object Detection Model
+
+| Architecture               | Conf./Journal |Key Features | Optimiser         | Epochs | Lr            |
+| ---------------------------|---------------|--------------|----------------- | ------ | ------------- |
+| CR-CNN [[paper]](https://arxiv.org/abs/1906.09756) | TPAMI, 2019 |two-stage, anchor-based |  SGD               | 20     | $10^{-2}$     |
+| FSAF [[paper]](https://arxiv.org/abs/1903.00621)      | CVPR, 2019 |single-stage, anchor-free | SGD               | 20     | $10^{-2}$     |
+| DDETR [[paper]](https://arxiv.org/abs/2010.04159) | ICLR, 2021 | transformer-based, single-stage, anchor-free | Adam  | 50 | $10^{-4}$     |
+| FRCNNw/ST [[paper]](https://arxiv.org/abs/2103.14030) | ICCV, 2021  |  | AdamW | 30 | $10^{-4}$     |
+| YOLOX [[paper]](https://arxiv.org/abs/2107.08430)     | CVPR, 2021  |  | SGD               | 20     | $10^{-3}$     |
+| CenterNet [[paper]](https://arxiv.org/abs/1904.07850) | CVPR, 2019 |  | SGD           | 20     | $2\times10^{-3}$ |
+| FCOS [[paper]](https://arxiv.org/abs/1904.01355) | ICCV, 2019 | single-stage, anchor-free |  SGD               | 20     | $10^{-2}$     |
+| TOOD [[paper]](https://arxiv.org/abs/2108.07755)  | ICCV, 2021 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
+| FreeAnchor [[paper]](https://arxiv.org/abs/1909.02466)  | NeurIPS, 2019 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
+
+[<sup>[top]</sup>](#index)
+
+## Experimental Protocol
+
+The [object detection models](object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385).
+
+The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5, using Average Precision (AP) for class-wise, and mAP for the overall performance measurement. More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
+
+[<sup>[top]</sup>](#index)
 
 ## OPIXray
 
@@ -46,10 +76,11 @@
 | TOOD       | 0.933     | 0.790   | 0.975    | 0.805   | 0.924   | 0.885  |
 | FreeAnchor | 0.924     | 0.716   | 0.955    | 0.788   | 0.934   | 0.863  |
 
+[<sup>[top]</sup>](#index)
 
 ## SIXray10
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/SIXray10.png)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/SIXray10.png) 
 
 | Model      | mAP   | Firearm | Knife | Wrench | Pliers | Scissors |
 |------------|-------|---------|-------|--------|--------|----------|
@@ -63,11 +94,11 @@
 | TOOD       | 0.898 | 0.851   | 0.893 | 0.921  | 0.915  | 0.896    |
 | FreeAnchor | 0.908 | 0.840   | 0.875 | 0.920  | 0.912  | 0.891    |
 
-
+[<sup>[top]</sup>](#index)
 
 ## PIDray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/PIDray.png)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/PIDray.png) 
 
 | Model      | mAP                   | Baton                  | Pliers                 | Hammer                 | Powerbank              | Scissors               | Wrench                 | Gun                    | Bullet                 | Sprayer                | HandCuffs              | Knife                  | Lighter                |
 |------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -81,10 +112,11 @@
 | TOOD    | .987/.944/.465 | .998/.979/.902 | .988/.946/.845 | .957/.961/.747 | .951/.953/.740 | .982/.972/.979 | .089/.286/.666 |  .966/.903/.395 | .888/.898/.490 | .988/.985/.990 | .345/.654/.471 | .859/.770/.329 | .833/.854/.668 |
 | FreeAnchor    | .979/.946/.493 | .989/.976/.920 | .987/.929/.831 | .953/.961/.728 | .970/.948/.733 | .986/.976/.976 | .117/.330/.663 | .956/.894/.332 | .845/.883/.596 | .987/.985/.990 | .397/.654/.500 | .829/.748/.146 | .833/.852/.659 |
 
+[<sup>[top]</sup>](#index)
 
 ## HiXray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/HiXray.png)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/HiXray.png) 
 
 | Model      | mAP   | Laptop | MobilePhone | Cosmetic | PortableCharger2 | Water | PortableCharger1 | Tablet | NonmetallicLighter |
 |------------|-------|--------|-------------|----------|------------------|-------|------------------|--------|--------------------|
@@ -98,10 +130,11 @@
 | TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301              |
 | FreeAnchor | 0.839 | 0.985   | 0.972      | 0.659    | 0.937            | 0.919 | 0.949            | 0.964  | 0.328              |
 
+[<sup>[top]</sup>](#index)
 
 ## CLCXray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/CLCXray.png)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/CLCXray.png) 
 
 | Model      | mAP   | blade |scissors | knife | dagger | SwissArmyKnife | PlasticBottle | Cans | VacuumCup | GlassBottle | CartonDrinks |Tin    | SprayCans |
 |------------|-------|-------|---------|-------|--------|----------------|---------------|------|-----------|-------------|--------------|-------|-----------|
@@ -115,19 +148,10 @@
 | TOOD       | 0.736 | 0.775 | 0.810   | 1.000 | 0.891  | 0.881          | 0.820         | 0.512| 0.929     | 0.237       | 0.854        | 0.722 | 0.405     |
 | FreeAnchor | 0.720 | 0.769 | 0.771   | 1.000 | 0.891  | 0.881          | 0.826         | 0.504| 0.923     | 0.179       | 0.830        | 0.724 | 0.343     |
 
+[<sup>[top]</sup>](#index)
 
+<!-- ## PIXray -->
 
-
-## PIXray
-
-
-<!-- ## GDXray
-
-
-## deei6
-
-
-## dbf6  -->
 
 
 # :frog: Reference
