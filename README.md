@@ -13,15 +13,15 @@ XVision benchmack aims to provide a collection of detection performance applied 
 <!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
 ## Index
-- [Dataset](#dragon_face-dataset)
-- [Object Detection Model](#hotsprings-object-detection-model)
-- [Experimental Protocol](#bulb-experimental-protocol)
-- [OPIXray](#opixray)
-- [SIXray10](#sixray10)
-- [PIDray](#pidray)
-- [HiXray](#hixray)
-- [CLCXray](#clcxray)
-- [Reference](#frog-reference)
+- <sup>[Dataset](#dragon_face-dataset) </sup>
+- <sup> [Object Detection Model](#hotsprings-object-detection-model) </sup>
+- <sup> [Experimental Protocol](#bulb-experimental-protocol) </sup>
+- <sup> [OPIXray](#opixray) </sup>
+- <sup> [SIXray10](#sixray10) </sup>
+- <sup> [PIDray](#pidray) </sup>
+- <sup> [HiXray](#hixray) </sup>
+- <sup> [CLCXray](#clcxray) </sup>
+- <sup> [Reference](#frog-reference) </sup>
 
 ## :dragon_face: Dataset
 
