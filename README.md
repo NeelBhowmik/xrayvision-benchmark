@@ -13,17 +13,17 @@ XVision benchmack aims to provide a collection of detection performance applied 
 <!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
 ## Index
-- [Dataset](#dataset)
-- [Object Detection Model](#object-detection-model)
-- [Experimental Protocol](#experimental-protocol)
+- [Dataset](#dragon_face-dataset)
+- [Object Detection Model](#hotsprings-object-detection-model)
+- [Experimental Protocol](#bulb-experimental-protocol)
 - [OPIXray](#opixray)
 - [SIXray10](#sixray10)
 - [PIDray](#pidray)
 - [HiXray](#hixray)
 - [CLCXray](#clcxray)
-- [Reference](#reference)
+- [Reference](#frog-reference)
 
-## Dataset
+## :dragon_face: Dataset
 
 |Name       | Type | Year | Class |Prohibited - Negative| Annotations| Views|Open Source | 
 |-----------|------|------|-------------|-------------|------|-----|------|
@@ -36,7 +36,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 [<sup>[top]</sup>](#index)
 
-## Object Detection Model
+## :hotsprings: Object Detection Model
 
 | Architecture               | Conf./Journal |Key Features | Optimiser         | Epochs | Lr            |
 | ---------------------------|---------------|--------------|----------------- | ------ | ------------- |
@@ -52,7 +52,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 [<sup>[top]</sup>](#index)
 
-## Experimental Protocol
+## :bulb: Experimental Protocol
 
 The [object detection models](object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385).
 
