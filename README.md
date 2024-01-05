@@ -12,16 +12,18 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 <!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
-## Index
-- <sup> [Dataset](#dragon_face-dataset) </sup>
-- <sup> [Object Detection Model](#hotsprings-object-detection-model) </sup>
-- <sup> [Experimental Protocol](#bulb-experimental-protocol) </sup>
-- <sup> [OPIXray](#opixray) </sup>
-- <sup> [SIXray10](#sixray10) </sup>
-- <sup> [PIDray](#pidray) </sup>
-- <sup> [HiXray](#hixray) </sup>
-- <sup> [CLCXray](#clcxray) </sup>
-- <sup> [Reference](#frog-reference) </sup>
+## :ant: Index
+<!-- - <small> [Dataset](#dragon_face-dataset) </small>
+- <small> [Object Detection Model](#hotsprings-object-detection-model) </small>
+- <small> [Experimental Protocol](#bulb-experimental-protocol) </small>
+- <small> [OPIXray](#opixray) </small>
+- <small> [SIXray10](#sixray10) </small>
+- <small> [PIDray](#pidray) </small>
+- <small> [HiXray](#hixray) </small>
+- <small> [CLCXray](#clcxray) </small>
+- <small> [Reference](#frog-reference) </small> -->
+
+<small> [[Dataset]](#dragon_face-dataset) </small>  <small> [[Object Detection Model]](#hotsprings-object-detection-model) </small>  <small> [[Experimental Protocol]](#bulb-experimental-protocol) </small>  <small> [[OPIXray]](#opixray) </small>  <small> [[SIXray10]](#sixray10) </small> <small> [[PIDray]](#pidray) </small> <small> [[HiXray]](#hixray) </small>  <small> [[CLCXray]](#clcxray) </small> <small> [[Reference]](#frog-reference) </small>
 
 ## :dragon_face: Dataset
 
@@ -38,25 +40,27 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## :hotsprings: Object Detection Model
 
-| Architecture               | Conf./Journal |Key Features | Optimiser         | Epochs | Lr            |
-| ---------------------------|---------------|--------------|----------------- | ------ | ------------- |
-| CR-CNN <sup>[[paper]](https://arxiv.org/abs/1906.09756) </sup> | TPAMI, 2019 |two-stage, anchor-based |  SGD               | 20     | $10^{-2}$     |
-| FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | SGD               | 20     | $10^{-2}$     |
-| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | Adam  | 50 | $10^{-4}$     |
-| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | AdamW | 30 | $10^{-4}$     |
-| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  | SGD               | 20     | $10^{-3}$     |
-| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | SGD           | 20     | $2\times10^{-3}$ |
-| FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free |  SGD               | 20     | $10^{-2}$     |
-| TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
-| FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
+| Architecture               | Conf./Journal |Key Features | Backbone | Optimiser         | Epochs | Lr            |
+| ---------------------------|---------------|--------------|----------|----------------- | ------ | ------------- |
+| CR-CNN <sup>[[paper]](https://arxiv.org/abs/1906.09756) </sup> | TPAMI, 2019 |two-stage, anchor-based | ResNet<sub>50</sub> |  SGD               | 20     | $10^{-2}$     |
+| FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
+| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | ResNet<sub>50</sub> | Adam  | 50 | $10^{-4}$     |
+| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | ResNet<sub>50</sub> | AdamW | 30 | $10^{-4}$     |
+| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  |  ResNet<sub>50</sub> | SGD               | 20     | $10^{-3}$     |
+| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | ResNet<sub>50</sub> | SGD           | 20     | $2\times10^{-3}$ |
+| FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
+| TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
+| FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
 
 [<sup>[top]</sup>](#index)
 
 ## :bulb: Experimental Protocol
 
-The [object detection models](object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385).
-
-The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5, using Average Precision (AP) for class-wise, and mAP for the overall performance measurement. More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
+- The [object detection models](object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
+- All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). 
+<!-- The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385). -->
+- The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using Average Precision (AP) for class-wise, and mAP for the overall performance measurement. 
+- More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
 
 [<sup>[top]</sup>](#index)
 
