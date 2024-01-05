@@ -13,7 +13,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 <!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
 ## Index
-- <sup>[Dataset](#dragon_face-dataset) </sup>
+- <sup> [Dataset](#dragon_face-dataset) </sup>
 - <sup> [Object Detection Model](#hotsprings-object-detection-model) </sup>
 - <sup> [Experimental Protocol](#bulb-experimental-protocol) </sup>
 - <sup> [OPIXray](#opixray) </sup>
@@ -27,11 +27,11 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 |Name       | Type | Year | Class |Prohibited - Negative| Annotations| Views|Open Source | 
 |-----------|------|------|-------------|-------------|------|-----|------|
-|OPIXray [[paper]](https://arxiv.org/abs/2004.08656)   |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
-|SIXray  [[paper]](https://arxiv.org/abs/1901.00303)   |2D    | 2019 |6            |8,929 - 1,050,0302 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray) |
-|PIDray [[paper]](https://arxiv.org/abs/2211.10763)   |2D    | 2022 |12           |47,677 - 0  | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
-|HiXray  [[paper]](https://arxiv.org/abs/2108.09917)     |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
-|CLCXray   [[paper]](https://ieeexplore.ieee.org/document/9722843)    |2D    | 2022 |12            |9,565 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
+|OPIXray <sup>[[paper]](https://arxiv.org/abs/2004.08656) </sup>   |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
+|SIXray  <sup>[[paper]](https://arxiv.org/abs/1901.00303) </sup>   |2D    | 2019 |6            |8,929 - 1,050,0302 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray) |
+|PIDray <sup>[[paper]](https://arxiv.org/abs/2211.10763) </sup>   |2D    | 2022 |12           |47,677 - 0  | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
+|HiXray  <sup>[[paper]](https://arxiv.org/abs/2108.09917) </sup>     |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
+|CLCXray   <sup>[[paper]](https://ieeexplore.ieee.org/document/9722843) </sup>     |2D    | 2022 |12            |9,565 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
 <!-- |PIXray       |2D    | 2022 |12            |5,046 - 0 | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/Mbwslib/DDoAS)  | -->
 
 [<sup>[top]</sup>](#index)
@@ -40,15 +40,15 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 | Architecture               | Conf./Journal |Key Features | Optimiser         | Epochs | Lr            |
 | ---------------------------|---------------|--------------|----------------- | ------ | ------------- |
-| CR-CNN [[paper]](https://arxiv.org/abs/1906.09756) | TPAMI, 2019 |two-stage, anchor-based |  SGD               | 20     | $10^{-2}$     |
-| FSAF [[paper]](https://arxiv.org/abs/1903.00621)      | CVPR, 2019 |single-stage, anchor-free | SGD               | 20     | $10^{-2}$     |
-| DDETR [[paper]](https://arxiv.org/abs/2010.04159) | ICLR, 2021 | transformer-based, single-stage, anchor-free | Adam  | 50 | $10^{-4}$     |
-| FRCNNw/ST [[paper]](https://arxiv.org/abs/2103.14030) | ICCV, 2021  |  | AdamW | 30 | $10^{-4}$     |
-| YOLOX [[paper]](https://arxiv.org/abs/2107.08430)     | CVPR, 2021  |  | SGD               | 20     | $10^{-3}$     |
-| CenterNet [[paper]](https://arxiv.org/abs/1904.07850) | CVPR, 2019 |  | SGD           | 20     | $2\times10^{-3}$ |
-| FCOS [[paper]](https://arxiv.org/abs/1904.01355) | ICCV, 2019 | single-stage, anchor-free |  SGD               | 20     | $10^{-2}$     |
-| TOOD [[paper]](https://arxiv.org/abs/2108.07755)  | ICCV, 2021 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
-| FreeAnchor [[paper]](https://arxiv.org/abs/1909.02466)  | NeurIPS, 2019 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
+| CR-CNN <sup>[[paper]](https://arxiv.org/abs/1906.09756) </sup> | TPAMI, 2019 |two-stage, anchor-based |  SGD               | 20     | $10^{-2}$     |
+| FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | SGD               | 20     | $10^{-2}$     |
+| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | Adam  | 50 | $10^{-4}$     |
+| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | AdamW | 30 | $10^{-4}$     |
+| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  | SGD               | 20     | $10^{-3}$     |
+| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | SGD           | 20     | $2\times10^{-3}$ |
+| FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free |  SGD               | 20     | $10^{-2}$     |
+| TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
+| FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | SGD               | 20     | $10^{-2}$     |
 
 [<sup>[top]</sup>](#index)
 
