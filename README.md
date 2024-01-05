@@ -32,7 +32,7 @@
 
 ## OPIXray
 
-[[dataset statistics]](<img src="https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png" />)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png)
 
 | Model      | mAP       | Folding | Straight | Scissor | Utility | M-tool |
 |------------|-----------|---------|----------|---------|---------|--------|
@@ -49,7 +49,7 @@
 
 ## SIXray10
 
-[[dataset statistics]](<img src="https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png" />)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png)
 
 | Model      | mAP   | Firearm | Knife | Wrench | Pliers | Scissors |
 |------------|-------|---------|-------|--------|--------|----------|
@@ -67,7 +67,7 @@
 
 ## PIDray
 
-[[dataset statistics]](<img src="https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png" />)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png)
 
 | Model      | mAP                   | Baton                  | Pliers                 | Hammer                 | Powerbank              | Scissors               | Wrench                 | Gun                    | Bullet                 | Sprayer                | HandCuffs              | Knife                  | Lighter                |
 |------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -84,7 +84,7 @@
 
 ## HiXray
 
-[[dataset statistics]](<img src="https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png" />)
+[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/xray-history.png)
 
 | Model      | mAP   | Laptop | MobilePhone | Cosmetic | PortableCharger2 | Water | PortableCharger1 | Tablet | NonmetallicLighter |
 |------------|-------|--------|-------------|----------|------------------|-------|------------------|--------|--------------------|
