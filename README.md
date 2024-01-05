@@ -66,7 +66,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## OPIXray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/OPIXray.png)
+:bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/OPIXray.png)
 
 | Model      | mAP       | Folding | Straight | Scissor | Utility | M-tool |
 |------------|-----------|---------|----------|---------|---------|--------|
@@ -84,7 +84,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## SIXray10
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/SIXray10.png) 
+:bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/SIXray10.png) 
 
 | Model      | mAP   | Firearm | Knife | Wrench | Pliers | Scissors |
 |------------|-------|---------|-------|--------|--------|----------|
@@ -102,7 +102,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## PIDray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/PIDray.png) 
+:bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/PIDray.png) 
 
 | Model      | mAP                   | Baton                  | Pliers                 | Hammer                 | Powerbank              | Scissors               | Wrench                 | Gun                    | Bullet                 | Sprayer                | HandCuffs              | Knife                  | Lighter                |
 |------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
@@ -120,7 +120,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## HiXray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/HiXray.png) 
+:bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/HiXray.png) 
 
 | Model      | mAP   | Laptop | MobilePhone | Cosmetic | PortableCharger2 | Water | PortableCharger1 | Tablet | NonmetallicLighter |
 |------------|-------|--------|-------------|----------|------------------|-------|------------------|--------|--------------------|
@@ -138,7 +138,7 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## CLCXray
 
-[[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/CLCXray.png) 
+:bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/CLCXray.png) 
 
 | Model      | mAP   | blade |scissors | knife | dagger | SwissArmyKnife | PlasticBottle | Cans | VacuumCup | GlassBottle | CartonDrinks |Tin    | SprayCans |
 |------------|-------|-------|---------|-------|--------|----------------|---------------|------|-----------|-------------|--------------|-------|-----------|
