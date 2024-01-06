@@ -1,4 +1,11 @@
-# XVision Benchmark: Benchmarking of X-ray security imaging datasets
+<div align="center">
+<img src="images/xvision_logo.png" width="100px"> 
+
+**XVision Benchmark: Benchmarking of X-ray Security Imaging Datasets**
+
+---
+</div>
+<!-- # XVision Benchmark: Benchmarking of X-ray security imaging datasets -->
 
 <!-- <p align="center">
   <img src="images/xray-history.png" />
