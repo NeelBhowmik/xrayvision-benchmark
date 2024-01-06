@@ -40,24 +40,24 @@ XVision benchmack aims to provide a collection of detection performance applied 
 
 ## :hotsprings: Object Detection Model
 
-| Architecture               | Conf./Journal |Key Features | Backbone | Optimiser         | Epochs | Lr            |
+| Architecture               | Conf./Journal |Key Features | Backbone | Optimiser         | Epochs | Config            |
 | ---------------------------|---------------|--------------|----------|----------------- | ------ | ------------- |
-| CR-CNN <sup>[[paper]](https://arxiv.org/abs/1906.09756) </sup> | TPAMI, 2019 |two-stage, anchor-based | ResNet<sub>50</sub> |  SGD               | 20     | $10^{-2}$     |
-| FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
-| FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
-| FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
-| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | ResNet<sub>50</sub> | SGD           | 20     | $2\times10^{-3}$ |
-| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | ResNet<sub>50</sub> | Adam  | 50 | $10^{-4}$     |
-| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | ResNet<sub>50</sub> | AdamW | 30 | $10^{-4}$     |
-| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  |  ResNet<sub>50</sub> | SGD               | 20     | $10^{-3}$     |
-| TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     | $10^{-2}$     |
+| CR-CNN <sup>[[paper]](https://arxiv.org/abs/1906.09756) </sup> | TPAMI, 2019 |two-stage, anchor-based | ResNet<sub>50</sub> |  SGD               | 20     |      |
+| FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     |      |
+| FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     |      |
+| FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     |      |
+| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | ResNet<sub>50</sub> | SGD           | 20     |  |
+| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | ResNet<sub>50</sub> | Adam  | 50 |      |
+| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | ResNet<sub>50</sub> | AdamW | 30 |      |
+| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  |  ResNet<sub>50</sub> | SGD               | 20     |      |
+| TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     |      |
 
 
 [<sup>[top]</sup>](#ant-index)
 
 ## :bulb: Experimental Protocol
 
-- The [object detection models](object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
+- The [object detection models](#hotsprings-object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
 - All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). 
 <!-- The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385). -->
 - The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
