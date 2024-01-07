@@ -1,7 +1,7 @@
 <div align="center">
-<img src="images/xvision_logo.png" width="100px"> 
+<img src="images/xvision_logo_3.png" width="100px"> 
 
-**XVision Benchmark: Benchmarking of X-ray Security Imaging Datasets**
+**XrayVision Benchmark: Benchmarking of X-ray Security Imaging Datasets**
 
 ---
 </div>
@@ -15,9 +15,9 @@
 
 <!-- XVision benchmack aims to provide a collection of detection performance applied on X-ray security screening public datasets using state-of-the-art deep learning based object detection algorithms.  -->
 
-**XVision Benchmark** aims to provide detection performance metrics for X-ray security screening public datasets, employing state-of-the-art deep learning-based object detection algorithms.
+**XrayVision Benchmark** aims to provide detection performance metrics for X-ray security screening public datasets, employing state-of-the-art deep learning-based object detection algorithms.
 
-:space_invader: XVision benchmack is constantly updated with the latest object detection algorithms and datasets - check in regularly for updates! 
+:space_invader: XrayVision benchmack is constantly updated with the latest object detection algorithms and datasets - check in regularly for updates! 
 
 *:boom: <small>[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]</small>*
 
