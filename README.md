@@ -5,15 +5,6 @@
 
 ---
 </div>
-<!-- # XVision Benchmark: Benchmarking of X-ray security imaging datasets -->
-
-<!-- <p align="center">
-  <img src="images/xray-history.png" />
-</p> -->
-
-<!-- *[List of datasets and papers (not exhaustive)]* -->
-
-<!-- XVision benchmack aims to provide a collection of detection performance applied on X-ray security screening public datasets using state-of-the-art deep learning based object detection algorithms.  -->
 
 **XrayVision Benchmark** aims to provide detection performance metrics for X-ray security screening public datasets, employing state-of-the-art deep learning-based object detection algorithms.
 
@@ -23,7 +14,6 @@
 
 *:boom: <small>[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]</small>*
 
-<!-- [*Want to know more about X-ray security imageing in Computer Vision? Follow this page: [Xray-Vision: Brief history of X-ray security imaging in Computer Vision](https://github.com/NeelBhowmik/xray)*] -->
 
 ## :ant: Index
 <!-- - <small> [Dataset](#dragon_face-dataset) </small>
@@ -42,7 +32,7 @@
 
 |Name       | Type | Year | Class |Prohibited - Negative| Annotations| Views|Open Source | 
 |-----------|------|------|-------------|-------------|------|-----|------|
-|SIXray10  <sup>[[paper]](https://arxiv.org/abs/1901.00303) </sup>   |2D    | 2019 |6            |8,929 - 1,050,0302 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray) |
+|SIXray10  <sup>[[paper]](https://arxiv.org/abs/1901.00303) </sup>   |2D    | 2019 |6            |8,929 - 0 | bbox |1 |<span style="color:green;">✓</span> [[Link]](https://github.com/MeioJane/SIXray) |
 |OPIXray <sup>[[paper]](https://arxiv.org/abs/2004.08656) </sup>   |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
 |HiXray  <sup>[[paper]](https://arxiv.org/abs/2108.09917) </sup>     |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
 |PIDray <sup>[[paper]](https://arxiv.org/abs/2211.10763) </sup>   |2D    | 2022 |12           |47,677 - 0  | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
@@ -74,9 +64,22 @@
 - The [object detection models](#hotsprings-object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
 - All experiments are trained only using **train set** (provided by the orginal dataset split).
 - All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home).
-- The model performance (**bbox** detection) is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
+- The model performance (**bbox** detection) is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU equal to 0.5 (**IoU=0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
 - These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
 - More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
+
+:microscope: **Evaluate your results:** Use the [coco_evaluation.py](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/tools/coco_evaluation.py) script – because who doesn't want metrics so detailed, even Sherlock would be impressed! :detective:
+
+```
+python3 tools/coco_evaluation.py --h
+
+options:
+  -h, --help           show this help message and exit
+  --gtfile GTFILE      ground truth [in coco format] json file path
+  --predfile PREDFILE  prediction [in coco format] json file path
+  --statpath STATPATH  output directory path to save stats file
+  --conf_iou CONF_IOU  confusion matrix iou threahold
+```   
 
 [<sup>[top]</sup>](#ant-index)
 
@@ -185,11 +188,11 @@
 
 <!-- ## PIXray -->
 
-# :bicyclist: :seal:  Additional Reading 
+## :bicyclist: Additional Reading 
 - Seeing Through the Data: A Statistical Evaluation of Prohibited Item Detection Benchmark Datasets for X-ray Security Screening [[Paper]](https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Isaac-Medina_Seeing_Through_the_Data_A_Statistical_Evaluation_of_Prohibited_Item_CVPRW_2023_paper.html)
   
 
-# :frog: Reference
+## :frog: Reference
 If you use this repo and like it, use this to cite it:
 ```tex
 @misc{xvision-benchmark,
@@ -199,10 +202,11 @@ If you use this repo and like it, use this to cite it:
       url={https://github.com/NeelBhowmik/xvision-benchmark}
     }
 ```
-# :rocket: Contribute
+
+## :rocket: Contribute
 
 Welcome to our lively repository - and you're invited to join the party! Feel free to contribute! 
 
-If you spot a missing paper - create an [issue](https://github.com/NeelBhowmik/xvision-benchmark/issues) or drop us an email @ neelanjan.bhowmik@durham.ac.uk 
+Want to include your algorithms/results - create an [issue](https://github.com/NeelBhowmik/xvision-benchmark/issues) or drop us an email @ neelanjan.bhowmik@durham.ac.uk 
 
 Together, we'll make this repo the coolest gathering spot for all things knowledge 📚
