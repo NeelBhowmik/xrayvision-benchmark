@@ -72,8 +72,10 @@
 ## :bulb: Experimental Protocol
 
 - The [object detection models](#hotsprings-object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
+- All experiments are trained only using **train set** (provided by the orginal dataset split).
 - All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home).
-- The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
+- The model performance (**bbox** detection) is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
+- These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
 - More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
 
 [<sup>[top]</sup>](#ant-index)
@@ -143,6 +145,8 @@
 
 :bar_chart: [[dataset statistics]](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/PIDray.png) 
 
+*[Reported values are evaluated on {easy/hard/hidden} test sets.]*
+
 | Model      | mAP                   | Baton                  | Pliers                 | Hammer                 | Powerbank              | Scissors               | Wrench                 | Gun                    | Bullet                 | Sprayer                | HandCuffs              | Knife                  | Lighter                |
 |------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | CR-CNN     | .827/.848/.633       | .985/.933/.357       | .999/.965/.916       | .960/.898/.774       | .953/.951/.753       | .958/.926/.735       | .984/.969/.930       | .158/.416/.655       | .945/.873/.332       | .775/.892/.544       | .989/.983/.989       | .379/.630/.479       | .843/.741/.125       |
@@ -181,7 +185,9 @@
 
 <!-- ## PIXray -->
 
-
+# :bicyclist: :seal:  Additional Reading 
+- Seeing Through the Data: A Statistical Evaluation of Prohibited Item Detection Benchmark Datasets for X-ray Security Screening [[Paper]](https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Isaac-Medina_Seeing_Through_the_Data_A_Statistical_Evaluation_of_Prohibited_Item_CVPRW_2023_paper.html)
+  
 
 # :frog: Reference
 If you use this repo and like it, use this to cite it:
