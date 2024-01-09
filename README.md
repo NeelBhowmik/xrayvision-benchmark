@@ -17,7 +17,10 @@
 
 **XrayVision Benchmark** aims to provide detection performance metrics for X-ray security screening public datasets, employing state-of-the-art deep learning-based object detection algorithms.
 
-:space_invader: XrayVision benchmack is constantly updated with the latest object detection algorithms and datasets - check in regularly for updates! 
+*:milky_way: Our grand objective: Standardize detection performance criteria and consolidate all results on this page - your one-stop-shop for the research community - because who has time to browse a million different places when you're busy changing the world?*
+
+
+:space_invader: XrayVision benchmack is constantly updated with the latest object detection algorithms, datasets and new features - check in regularly for updates! 
 
 *:boom: <small>[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]</small>*
 
@@ -57,10 +60,11 @@
 | FSAF <sup>[[paper]](https://arxiv.org/abs/1903.00621) </sup>     | CVPR, 2019 |single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     |      |
 | FreeAnchor <sup>[[paper]](https://arxiv.org/abs/1909.02466) </sup>  | NeurIPS, 2019 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     |      |
 | FCOS <sup>[[paper]](https://arxiv.org/abs/1904.01355) </sup> | ICCV, 2019 | single-stage, anchor-free | ResNet<sub>50</sub> | SGD               | 20     |      |
-| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 |  | ResNet<sub>50</sub> | SGD           | 20     |  |
-| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-free | ResNet<sub>50</sub> | Adam  | 50 |      |
-| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  |  | ResNet<sub>50</sub> | AdamW | 30 |      |
-| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  |  |  ResNet<sub>50</sub> | SGD               | 20     |      |
+| CenterNet <sup>[[paper]](https://arxiv.org/abs/1904.07850) </sup> | CVPR, 2019 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD           | 20     |  |
+| PAA <sup>[[paper]](https://arxiv.org/abs/2007.08103) </sup> | ECCV, 2020 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD           | 20     |  |
+| DDETR <sup>[[paper]](https://arxiv.org/abs/2010.04159) </sup> | ICLR, 2021 | transformer-based, single-stage, anchor-based | ResNet<sub>50</sub> | Adam  | 50 |      |
+| FRCNNw/ST <sup>[[paper]](https://arxiv.org/abs/2103.14030) </sup> | ICCV, 2021  | transformer-based, two-stage, anchor-free | Swin-T | AdamW | 30 |      |
+| YOLOX <sup>[[paper]](https://arxiv.org/abs/2107.08430) </sup>     | CVPR, 2021  | single-stage, anchor-free |  ResNet<sub>50</sub> | SGD               | 20     |      |
 | TOOD <sup>[[paper]](https://arxiv.org/abs/2108.07755) </sup>  | ICCV, 2021 | single-stage, anchor-based | ResNet<sub>50</sub> | SGD               | 20     |      |
 
 
@@ -69,8 +73,7 @@
 ## :bulb: Experimental Protocol
 
 - The [object detection models](#hotsprings-object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
-- All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home). 
-<!-- The [object detection models](object-detection-model) are trained using a [ResNet50 backbone](https://arxiv.org/abs/1512.03385). -->
+- All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home).
 - The model performance is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU greater than 0.5 (**IoU >= 0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
 - More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
 
@@ -88,6 +91,7 @@
 | FreeAnchor | 0.908 | 0.840   | 0.875 | 0.920  | 0.912  | 0.891    |
 | FCOS       | 0.892 | 0.788   | 0.808 | 0.881  | 0.903  | 0.854    |
 | CenterNet  | 0.896 | 0.906   | 0.862 | 0.887  | 0.918  | 0.908    |
+| PAA        | 0.906 | 0.912   | 0.884 | 0.869  | 0.926  | 0.939    |
 | DDETR      | **0.932** | 0.913   | 0.934 | 0.910  | 0.944  | 0.960    |
 | FRCNNw/ST  | 0.904 | 0.897   | 0.856 | 0.899  | 0.920  | 0.947    |
 | YOLOX      | 0.903 | 0.909   | 0.869 | 0.891  | 0.907  | 0.938    |
@@ -106,6 +110,7 @@
 | FreeAnchor | 0.924     | 0.716   | 0.955    | 0.788   | 0.934   | 0.863  |
 | FCOS       | 0.915     | 0.747   | 0.969    | 0.843   | 0.930   | 0.881  |
 | CenterNet  | 0.875     | 0.911   | 0.758    | 0.977   | 0.820   | 0.909  |
+| PAA        | 0.899     | 0.944   | 0.788    | 0.976   | 0.835   | 0.955  |
 | DDETR      | 0.888     | 0.909   | 0.774    | 0.963   | 0.859   | 0.934  |
 | FRCNNw/ST  | **0.915** | 0.945   | 0.842    | 0.977   | 0.854   | 0.959  |
 | YOLOX      | 0.896     | 0.908   | 0.801    | 0.974   | 0.859   | 0.935  |
@@ -126,10 +131,11 @@
 | FreeAnchor | 0.839 | 0.985   | 0.972      | 0.659    | 0.937            | 0.919 | 0.949            | 0.964  | 0.328              |
 | FCOS       | 0.817 | 0.981   | 0.970      | 0.614    | 0.932            | 0.911 | 0.943            | 0.956  | 0.225              |
 | CenterNet  | 
+| PAA        | 0.852 | 0.983  | 0.979       | 0.685    | 0.950            | 0.936 | 0.958            | 0.971  | 0.355              |
 | DDETR      | 0.860 | 0.984  | 0.981       | 0.706    | 0.960            | 0.938 | 0.968            | 0.972  | 0.376              |
 | FRCNNw/ST  | 
 | YOLOX      | 
- | TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301              |
+ | TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301             |
 
 
 [<sup>[top]</sup>](#ant-index)
@@ -145,6 +151,7 @@
 | FreeAnchor    | .979/.946/.493 | .989/.976/.920 | .987/.929/.831 | .953/.961/.728 | .970/.948/.733 | .986/.976/.976 | .117/.330/.663 | .956/.894/.332 | .845/.883/.596 | .987/.985/.990 | .397/.654/.500 | .829/.748/.146 | .833/.852/.659 |
 | FCOS    | .847/.910/.492 | .920/.963/.895 | .844/.878/.745 | .808/.928/.745 | .764/.917/.699 |  .872/.944/.970 | .106/.479/.641 | .808/.866/.316 | .510/.852/.577 | .899/.971/.988 | .229/.619/.364 | .691/.752/.233 | .692/.840/.639 |
 | CenterNet  | .835/.837/.566       | .977/.935/.935       | .990/.975/.914       | .972/.908/.655       | .952/.955/.649       | .967/.933/.649       | .983/.970/.963       | .278/.441/.568       | .891/.748/.207       | .732/.863/.334       | .989/.987/.989       | .439/.605/.362       | .851/.723/.143       |
+| PAA     | .858/.870/.694 | .986/.944/.562 | .996/.980/.923 | .987/.935/.836 | .961/.959/.710 | .970/.959/.800 | .985/.975/.981 | .214/.405/.672 | .971/.904/.361 | .834/.904/.639 | .988/.985/.990 | .537/.700/.535 | .862.789/.322 | 
 | DDETR      | .861/.868/.716       | .989/.952/.589       | .999/.983/.941       | .971/.945/.860       | .969/.968/.723       | .970/.968/.845       | .987/.983/.981       | .099/.337/.645       | .966/.877/.384       | .950/.914/.703       | .988/.986/.990       | .578/.724/.537       | .872/.781/.388       |
 | FRCNNw/ST  | **.906/.896/.765**       | .988/.976/.717       | .990/.979/.949       | .988/.952/.921       | .969/.978/.835       | .981/.963/.910       | .988/.987/.990       | .506/.579/.756       | .962/.872/.505       | .958/.943/.676       | .988/.986/.990       | .692/.753/.620       | .867/.787/.906       |
 | YOLOX      | .879/.883/.695       | .986/.958/.615       | .989/.986/.883       | .969/.943/.826       | .964/.966/.737       | .982/.964/.840       | .958/.987/.978       | .334/.472/.666       | .960/.902/.393       | .905/.928/.676       | .989/.986/.990       | .670/.707/.525       | .846/.795/.213       |
@@ -164,6 +171,7 @@
 | FreeAnchor | 0.720 | 0.769 | 0.771   | 1.000 | 0.891  | 0.881          | 0.826         | 0.504| 0.923     | 0.179       | 0.830        | 0.724 | 0.343     |
 | FCOS       | 0.705 | 0.687 | 0.797   | 1.000 | 0.854  | 0.881          | 0.805         | 0.509| 0.914     | 0.148       | 0.835        | 0.739 | 0.288     |
 | CenterNet  |
+| PAA        | 0.736 | 0.730| 0.809    | 1.000 | 0.891  | 0.881          | 0.836         | 0.540| 0.929     | 0.246       | 0.855        | 0.731 | 0.385     |
 | DDETR      | 0.744 | 0.780 | 0.813   | 1.000 | 0.891  | 0.937          | 0.822         | 0.466| 0.932     | 0.288       | 0.843        | 0.724 | 0.430     |
 | FRCNNw/ST  | 
 | YOLOX      | 
