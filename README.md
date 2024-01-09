@@ -68,7 +68,7 @@
 - These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
 - More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
 
-:microscope: **Evaluate your results:** Use the [coco_evaluation.py](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/images/tools/coco_evaluation.py) script – because who doesn't want metrics so detailed, even Sherlock would be impressed! :detective:
+:microscope: **Evaluate your results:** Use the [coco_evaluation.py](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/tools/coco_evaluation.py) script – because who doesn't want metrics so detailed, even Sherlock would be impressed! :detective:
 
 ```
 python3 tools/coco_evaluation.py --h
@@ -196,7 +196,7 @@ options:
 If you use this repo and like it, use this to cite it:
 ```tex
 @misc{xvision-benchmark,
-      title={XVision Benchmark: Benchmarking of X-ray security imaging datasets},
+      title={XrayVision Benchmark: Benchmarking of X-ray security imaging datasets},
       author={Neelanjan Bhowmik},
       year={2023},
       url={https://github.com/NeelBhowmik/xvision-benchmark}
