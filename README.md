@@ -17,8 +17,7 @@
 
 **XrayVision Benchmark** aims to provide detection performance metrics for X-ray security screening public datasets, employing state-of-the-art deep learning-based object detection algorithms.
 
-:stars: *<small>Our grand objective: Standardize detection performance criteria and consolidate all results on this page - your one-stop-shop for the research community - because who has time to browse a million different places when you're busy changing the world?</small>*
-
+:owl: *<sub><sup>Our epochal mission: Standardise detection performance criteria and consolidate all results on this page - your one-stop-shop for the research community - because who has time to browse a million different places when you're busy changing the world?</sub></sup>*
 
 :space_invader: XrayVision benchmack is constantly updated with the latest object detection algorithms, datasets and new features - check in regularly for updates! 
 
