@@ -36,7 +36,7 @@
 |OPIXray <sup>[[paper]](https://arxiv.org/abs/2004.08656) </sup>   |2D    | 2020 |5            |8,885  - 0 | bbox |1     |<span style="color:green;">✓</span>  [[Link]](https://github.com/OPIXray-author/OPIXray)           |
 |HiXray  <sup>[[paper]](https://arxiv.org/abs/2108.09917) </sup>     |2D    | 2021 |8            |45,364 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/DIG-Beihang/XrayDetection)  |
 |PIDray <sup>[[paper]](https://arxiv.org/abs/2211.10763) </sup>   |2D    | 2022 |12           |47,677 - 0  | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/bywang2018/security-dataset)       |
-|CLCXray   <sup>[[paper]](https://ieeexplore.ieee.org/document/9722843) </sup>     |2D    | 2022 |12            |9,565 - 0 | bbox|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
+|CLCXray   <sup>[[paper]](https://ieeexplore.ieee.org/document/9722843) </sup>     |2D    | 2022 |12            |9,565 - 0 | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/GreysonPhoenix/CLCXray)  |
 <!-- |PIXray       |2D    | 2022 |12            |5,046 - 0 | bbox, segm|1     |<span style="color:green;">✓</span> [[Link]](https://github.com/Mbwslib/DDoAS)  | -->
 
 [<sup>[top]</sup>](#ant-index)
@@ -62,10 +62,9 @@
 ## :bulb: Experimental Protocol
 
 - The [object detection models](#hotsprings-object-detection-model) are implemented using the [MMDetection framework](https://github.com/open-mmlab/mmdetection). 
-- All experiments are trained only using **train set** (provided by the orginal dataset split).
+- Our experiments stick to the **train set** for that classic touch, and when it's time to flaunt results, they show off on the **test set** (provided by the orginal dataset split) — unless, of course, it is specified.
 - All experiments are initialised with weights pretrained on the [COCO dataset](https://cocodataset.org/#home).
 - The model performance (**bbox** detection) is evaluated through [MS-COCO metrics](https://cocodataset.org/#detection-eval), with IoU equal to 0.5 (**IoU=0.5**), using **Average Precision (AP) for class-wise**, and **mAP for the overall performance** measurement. 
-- These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
 - More about coco evaluation metrics, follow this [link](https://pyimagesearch.com/2022/05/02/mean-average-precision-map-using-the-coco-evaluator/).
 
 :microscope: **Evaluate your results:** Use the [coco_evaluation.py](https://github.com/NeelBhowmik/xvision-benchmark/tree/main/tools/coco_evaluation.py) script – because who doesn't want metrics so detailed, even Sherlock would be impressed! :detective:
@@ -135,8 +134,7 @@ options:
 | FreeAnchor | 0.839 | 0.985   | 0.972      | 0.659    | 0.937            | 0.919 | 0.949            | 0.964  | 0.328              |
 | FCOS       | 0.817 | 0.981   | 0.970      | 0.614    | 0.932            | 0.911 | 0.943            | 0.956  | 0.225              |
 | CenterNet  | 
-| PAA        | 0.852 | 0.983  | 0.979       | 0.685    | 0.950            | 0.936 | 0.958            | 0.971  | 0.355              |
-| DDETR      | 0.860 | 0.984  | 0.981       | 0.706    | 0.960            | 0.938 | 0.968            | 0.972  | 0.376              |
+| PAA        | 0.852 | 0.983  | 0.979       | 0.685- These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
 | FRCNNw/ST  | 
 | YOLOX      | 
  | TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301             |
