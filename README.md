@@ -134,7 +134,8 @@ options:
 | FreeAnchor | 0.839 | 0.985   | 0.972      | 0.659    | 0.937            | 0.919 | 0.949            | 0.964  | 0.328              |
 | FCOS       | 0.817 | 0.981   | 0.970      | 0.614    | 0.932            | 0.911 | 0.943            | 0.956  | 0.225              |
 | CenterNet  | 
-| PAA        | 0.852 | 0.983  | 0.979       | 0.685- These reported values are evaluated on **test set** (provided by the orginal dataset split), unless it is specified.
+| PAA        | 0.852 | 0.983  | 0.979       | 0.685    | 0.950            | 0.936 | 0.958            | 0.971  | 0.355              |
+| DDETR      | 0.860 | 0.984  | 0.981       | 0.706    | 0.960            | 0.938 | 0.968            | 0.972  | 0.376              |
 | FRCNNw/ST  | 
 | YOLOX      | 
  | TOOD       | 0.852 | 0.982   | 0.980      | 0.748    | 0.949            | 0.935 | 0.961            | 0.962  | 0.301             |
