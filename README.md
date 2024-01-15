@@ -15,10 +15,10 @@
 *:boom: <small>[Curious about the mysterious world of X-ray security imaging in Computer Vision? Follow this page for an enlightening journey—where even the machines have to double-check their bags: [Link](https://github.com/NeelBhowmik/xray)]</small>*
 
 <div style="display: flex;">
-    <img src="images/ex1.jpg" alt="Image 1" style="width:180px">
-    <img src="images/ex2.jpg" alt="Image 2" style="width:180px">
-    <img src="images/ex3.jpg" alt="Image 3" style="width:180px">
-    <img src="images/ex4.jpg" alt="Image 4" style="width:180px">
+    <img src="images/ex1.jpg" alt="Image 1" style="width:200px">
+    <img src="images/ex2.jpg" alt="Image 2" style="width:200px">
+    <img src="images/ex3.jpg" alt="Image 3" style="width:200px">
+    <img src="images/ex4.jpg" alt="Image 4" style="width:200px">
 </div>
 
 ## :ant: Index
