@@ -239,7 +239,7 @@ def main():
         help="confusion matrix iou threahold")
     args = parser.parse_args()
 
-    if args.gtfile or args.predfile is None:
+    if (args.gtfile is None) or (args.predfile is None):
         print('gt/prediction file missing!')
         exit()
 
