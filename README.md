@@ -241,6 +241,12 @@ If you use this repo/results/model weights, please make sure to cite it – give
 
 Welcome to our lively repository - and you're invited to join the party! Feel free to contribute! 
 
+Big shoutout to everyone who's already chipped in!
+
+<img src="images/contri.png" width="160px"> 
+
+
+
 Want to include your algorithms/results - create an [issue](https://github.com/NeelBhowmik/xvision-benchmark/issues) or drop us an email @ neelanjan.bhowmik@durham.ac.uk 
 
 Together, we'll make this repo the coolest gathering spot for all things knowledge 📚
