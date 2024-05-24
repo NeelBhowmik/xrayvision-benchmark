@@ -243,7 +243,7 @@ Welcome to our lively repository - and you're invited to join the party! Feel fr
 
 Big shoutout to everyone who's already chipped in!
 
-<img src="images/contri.png" width="160px"> 
+<img src="images/contri.png" width="190px"> 
 
 
 
